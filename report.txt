@@ -59,7 +59,7 @@ the post-quantum research community will continue to support and participate in 
 
 
 
-KEM:
+KEM: {NOT SECURE FOR POST QUANTUM}
 
 KEM, or Key Encapsulation Mechanism, is a cryptographic protocol used primarily for securing key exchange in public key 
 cryptography. KEM allows two parties to securely exchange encryption keys over an insecure channel. Instead of directly 
@@ -67,6 +67,13 @@ encrypting the keys, KEM encapsulates the key inside a secure message. This mech
 systems where the exchanged key is then used for symmetric encryption, combining the benefits of both symmetric and 
 asymmetric cryptography. KEM ensures that even if the key exchange process is intercepted, the encapsulated key remains 
 secure.
+
+Steps:
+
+1) Encrypt the message using symmetric key encryption
+2) Encrypt the key using assymetric key encryption (public key) and attach encrypted private key to message {ASSYMETRIC KEY ENCRYTION IS HEAVY}
+3) Reciever uses his private key to decrypt the encrypted priavte key first
+4) Reciever decrypts the message using the decrypted private key
 
 
 
