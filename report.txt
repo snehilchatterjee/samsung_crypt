@@ -1,0 +1,49 @@
+Useful links:
+Open Quantum Safe: https://github.com/open-quantum-safe/liboqs/tree/main
+Clean implementations: https://github.com/PQClean/PQClean/tree/master
+CRYSTALS-Kyber: https://github.com/pq-crystals/kyber
+
+
+
+NIST:
+Quantum-resistant digital signature (like SPHINCS+) and key encapsulation mechanisms,
+
+
+Standardized so far:
+
+Key encapsulation mechanism: CRYSTALS-Kyber {learning-with-errors (LWE) problem over module lattices}
+Signature schemes: CRYSTALS-Dilithium, Falcon, and SPHINCS+
+
+
+
+Some of the proposed solutions so far:
+
+1) Learning with errors/ Ring learning with errors              {APPROVED}
+2) Supersingular Isogeny Key Encapsulation (SIKE &  SIDH)       {NOT APPROVED}
+3) Leighton-Micali Signature scheme                             {APPROVED}
+
+
+NIST:
+
+1) CRYSTALS-Kyber (official implementation: https://github.com/pq-crystals/kyber)
+
+
+2) SIKE and SIDH are insecure and should not be used (https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/round-4/submissions/SIKE-spec.pdf):
+Because of the proposed key recovery attack proposed by Castryck and Decru (https://eprint.iacr.org/2022/975)
+
+Isogeny-based schemes use the mathematics of supersingular elliptic curves to create a Diffie–Hellman-like key exchange.
+
+Moriya and Fouotsa have independently proposed different approaches to modifying
+SIDH to avoid the Castryck and Decru family of attacks, but both of these proposals severely degrade the
+performance and key size of SIDH by at least an order of magnitude.
+
+The general consensus at this time
+is that there is no known variant of SIDH which both retains roughly the same performance characteristics
+as what was originally proposed while also remaining secure.
+
+"Although there are no other active isogeny-based candidates participating in the NIST standardization
+process, we hope that research and development into isogeny-based cryptosystems will continue and that
+the post-quantum research community will continue to support and participate in such work"
+
+3) Leighton-Micali Signature scheme:
+
