@@ -49,3 +49,27 @@ the post-quantum research community will continue to support and participate in 
 
 3) Leighton-Micali Signature scheme:
 
+
+
+
+
+
+
+
+
+
+
+KEM:
+
+KEM, or Key Encapsulation Mechanism, is a cryptographic protocol used primarily for securing key exchange in public key 
+cryptography. KEM allows two parties to securely exchange encryption keys over an insecure channel. Instead of directly 
+encrypting the keys, KEM encapsulates the key inside a secure message. This mechanism is often used in hybrid encryption 
+systems where the exchanged key is then used for symmetric encryption, combining the benefits of both symmetric and 
+asymmetric cryptography. KEM ensures that even if the key exchange process is intercepted, the encapsulated key remains 
+secure.
+
+
+
+
+
+
