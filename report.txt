@@ -2,6 +2,8 @@ Useful links:
 Open Quantum Safe: https://github.com/open-quantum-safe/liboqs/tree/main
 Clean implementations: https://github.com/PQClean/PQClean/tree/master
 CRYSTALS-Kyber: https://github.com/pq-crystals/kyber
+Java Wrapper of Open Quantum Safe: https://github.com/open-quantum-safe/liboqs-java
+Sample App for Open Qauntum Safe: https://github.com/Hatzen/LibOQSTestApp
 
 
 
