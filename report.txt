@@ -4,8 +4,7 @@ Clean implementations: https://github.com/PQClean/PQClean/tree/master
 CRYSTALS-Kyber: https://github.com/pq-crystals/kyber
 Java Wrapper of Open Quantum Safe: https://github.com/open-quantum-safe/liboqs-java
 Sample App for Open Qauntum Safe: https://github.com/Hatzen/LibOQSTestApp
-
-
+Python Wrapper for Libqos: https://github.com/open-quantum-safe/liboqs-python/tree/main
 
 NIST:
 Quantum-resistant digital signature (like SPHINCS+) and key encapsulation mechanisms,
@@ -20,9 +19,11 @@ Signature schemes: CRYSTALS-Dilithium, Falcon, and SPHINCS+
 
 Some of the proposed solutions so far:
 
-1) Learning with errors/ Ring learning with errors              {APPROVED}
-2) Supersingular Isogeny Key Encapsulation (SIKE &  SIDH)       {NOT APPROVED}
-3) Leighton-Micali Signature scheme                             {APPROVED}
+1) Learning with errors/ Ring learning with errors              {BASE OF Kyber}
+2) Supersingular Isogeny Key Encapsulation (SIKE &  SIDH)       {NOT APPROVED - https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/round-4/submissions/SIKE-spec.pdf}
+3) Winternitz One Time Signature                                {BASE OF LMS and XMSS}
+4) Leighton-Micali Signature scheme                             {APPROVED - https://www.nist.gov/news-events/news/2020/10/recommendation-stateful-hash-based-signature-schemes-nist-sp-800-208}
+5) eXtended Merkle Signature Scheme                             {APPROVED}
 
 
 NIST:
@@ -30,7 +31,7 @@ NIST:
 1) CRYSTALS-Kyber (official implementation: https://github.com/pq-crystals/kyber)
 
 
-2) SIKE and SIDH are insecure and should not be used (https://csrc.nist.gov/csrc/media/Projects/post-quantum-cryptography/documents/round-4/submissions/SIKE-spec.pdf):
+2) SIKE and SIDH are insecure and should not be used:
 Because of the proposed key recovery attack proposed by Castryck and Decru (https://eprint.iacr.org/2022/975)
 
 Isogeny-based schemes use the mathematics of supersingular elliptic curves to create a Diffie–Hellman-like key exchange.
