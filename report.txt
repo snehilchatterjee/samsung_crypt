@@ -2,9 +2,10 @@ Useful links:
 Open Quantum Safe: https://github.com/open-quantum-safe/liboqs/tree/main
 Clean implementations: https://github.com/PQClean/PQClean/tree/master
 CRYSTALS-Kyber: https://github.com/pq-crystals/kyber
-Java Wrapper of Open Quantum Safe: https://github.com/open-quantum-safe/liboqs-java
 Sample App for Open Qauntum Safe: https://github.com/Hatzen/LibOQSTestApp
-Python Wrapper for Libqos: https://github.com/open-quantum-safe/liboqs-python/tree/main
+Python Wrapper for Liboqs: https://github.com/open-quantum-safe/liboqs-python/tree/main
+Rust Wrapper for Liboqs: https://github.com/open-quantum-safe/liboqs-rust
+Java Wrapper of Open Quantum Safe: https://github.com/open-quantum-safe/liboqs-java
 
 NIST:
 Quantum-resistant digital signature (like SPHINCS+) and key encapsulation mechanisms,
