@@ -1,0 +1,41 @@
+Problem with SIKE AND SIDH:
+Castryck and Decru posted
+a preprint [5] outlining an efficient classical key recovery algorithm against SIDH along with code
+implementing the algorithm and demonstrating its practicality
+
+Moriya [40] and Fouotsa [18] have independently proposed different approaches to modifying
+SIDH to avoid the Castryck and Decru family of attacks, but both of these proposals severely degrade the
+performance and key size of SIDH by at least an order of magnitude. 
+
+
+
+Lamport Signature (is stateless)
+
+Winternitz One Time Signature (Base of LMS and XMSS) 		{Stateful signature scheme - incorporates the previous output into the next iteration }
+
+
+
+Key Findings:
+
+
+1) KEM:
+
+Encapsulate a private key for transportation
+
+(Specifically Assymetric Key encryption is enefficent as compared to Symmetric)
+
+
+2) Lattice Based Cryphtography:
+demonstrating the strength of lattice-based approaches in quantum-safe cryptography.
+
+3) Quantum-Safe Hash-Based Digital Signatures:
+Grover’s algorithm only provide a quadratic speedup for searching hash functions.
+
+4) Ease of Implementation:
+wrapper available in rust, java and python
+
+5) Stateful Hash-Based Signature Schemes:
+could not be implemented using the API that NIST has defined (which does not allow any state).
+
+6) Special publication:
+

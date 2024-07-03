@@ -82,3 +82,27 @@ Steps:
 
 
 
+Stateful Hash Signatures:
+
+In this context, "stateful" typically refers to cryptographic hash functions that are used within signature 
+schemes where the state (or context) of the hash function changes over time or between different operations.
+For instance, in some signature schemes, the hash function may maintain an internal state that changes with 
+each message it processes or with each signature generation process. This state can include things like 
+counters, internal variables, or precomputed values that influence the output of the hash function or the 
+signature generation process.
+
+Stateless Hash Signatures:
+
+Conversely, "stateless" hash signatures refer to cryptographic signature schemes where the hash function is 
+used in a straightforward manner without maintaining any internal state that changes between operations.
+In these schemes, the output of the hash function depends solely on the input data
+(such as the message being signed) and possibly some fixed parameters (like cryptographic keys), 
+but not on any internal state that evolves over time or between different uses.
+
+Stateless hash signatures are more common in traditional digital signature schemes like RSA or DSA, 
+where the hash function is applied independently to each message without any internal state changes 
+affecting subsequent operations.
+
+
+
+Merkle Tree: Tree made up of hashes
